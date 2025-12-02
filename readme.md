@@ -4,7 +4,7 @@ VisionWeave is an AI-powered platform that allows users to generate images by si
 
 ## Installation
 
-Clone to the Project using : git clone https://github.com/Siser-Pratap/VisionWave.git
+Clone to the Project using : git clone https://github.com/atalgupta1572/visionweave 
 
 # Run the Frontend 
 
