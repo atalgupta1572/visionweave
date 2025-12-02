@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face{
+    font-family: 'MyFont';
+    src:url('./.ttf') format('truetype')
+}
+  
+  @font-face {
+    font-family: 'OLondon';
+    src: url('/fonts/OLondon.otf') format('opentype');
+  }
+  
+  @font-face{
+    font-family: 'Ancient';
+    src:url('./Ancient.ttf') format('truetype')
+}
+ 
+  
+
+* {
+    font-family: serif;
+}
+
+@media screen and (min-width: 480px) {
+    .card:nth-child(7n + 1) {
+        grid-column: auto/span 2;
+        grid-row: auto/span 2;
+    }
+}
+
+.prompt::-webkit-scrollbar {
+    width: 5px;
+}
+ 
+.prompt::-webkit-scrollbar-thumb {
+  background-color: #666e75;
+  border-radius: 5px;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.name{
+    font-family: Ancient;
+}
+
+
+  @media screen and (max-width: 550px) {
+    .arrow {
+      display: none;
+    }
+  }
+
+
+  @media screen and (max-width: 550px) {
+    .companies {
+      display: inline-block;
+      white-space: nowrap;
+      animation: moveLeftToRight 3s linear infinite alternate;
+    }
+  
+    @keyframes moveLeftToRight {
+      0% {
+        transform: translateX(-40%); /* Start off-screen from the left */
+      }
+      50% {
+        transform: translateX(6%); /* Move to the right off-screen */
+      }
+      100% {
+        transform: translateX(-40%); /* Move back to the left off-screen */
+      }
+    }
+  }
+
+
+  html{
+    scroll-behavior: smooth;
+  }
